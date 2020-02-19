@@ -7,7 +7,27 @@ body {
 
 header {
     background-color: @lt-green;
-    height: 190px;
+    height: 100px;
+    .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    img {
+        width: 100%;
+        max-width: 210px;
+    }
+    ul {
+        li {
+            display: inline;
+            padding-left: 30px;
+        }
+    }
+    .desktop-nav {
+        text-align: right;
+        text-transform: uppercase;
+    }
 }
 
 footer {

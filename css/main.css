@@ -4,7 +4,31 @@ body {
 }
 header {
   background-color: #b0eed1;
-  height: 190px;
+  height: 100px;
+}
+header .header-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+header img {
+  width: 100%;
+  max-width: 210px;
+}
+header ul li {
+  display: inline;
+  padding-left: 30px;
+}
+header .desktop-nav {
+  text-align: right;
+  text-transform: uppercase;
 }
 footer {
   background-color: #f2dbee;
