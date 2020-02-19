@@ -3,6 +3,14 @@
 
 body {
     font-family: @josefin;
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        border-bottom: 5px solid @black;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
 }
 
 header {
@@ -22,12 +30,13 @@ header {
         li {
             display: inline;
             padding-left: 30px;
-            font-size: 20px;
+            font-size: 15px;
         }
     }
     .desktop-nav {
         text-align: right;
         text-transform: uppercase;
+        padding-top: 16px;
     }
 }
 
@@ -39,8 +48,27 @@ main {
         background: url("../images/bg-image.png") no-repeat center center; 
         background-size: 100%;
     }
+    article {
+        padding: 50px 0;
+        p {
+            margin-top:10px;
+        }
+    }
 }
 
 footer {
     background-color: @pink;
+    img {
+        width: 100%;
+    }
+    p {
+        margin:0;
+    }
+}
+
+.footer-content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px
 }

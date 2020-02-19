@@ -2,6 +2,14 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
 }
+body h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #000000;
+  display: inline-block;
+  margin-bottom: 10px;
+}
 header {
   background-color: #b0eed1;
   height: 100px;
@@ -25,11 +33,12 @@ header img {
 header ul li {
   display: inline;
   padding-left: 30px;
-  font-size: 20px;
+  font-size: 15px;
 }
 header .desktop-nav {
   text-align: right;
   text-transform: uppercase;
+  padding-top: 16px;
 }
 main img {
   width: 100%;
@@ -38,6 +47,30 @@ main .jumbotron {
   background: url("../images/bg-image.png") no-repeat center center;
   background-size: 100%;
 }
+main article {
+  padding: 50px 0;
+}
+main article p {
+  margin-top: 10px;
+}
 footer {
   background-color: #f2dbee;
+}
+footer img {
+  width: 100%;
+}
+footer p {
+  margin: 0;
+}
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
 }
