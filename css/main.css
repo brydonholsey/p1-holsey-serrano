@@ -1,17 +1,10 @@
-/* fonts:
-font-family: 'Josefin Sans', sans-serif; 
-*/
-
-* {
-    margin:0;
-    padding:0;
-    border:0;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap');
 body {
-    font-family: 'Josefin Sans', sans-serif;
+  font: 'Josefin Sans', sans-serif;
 }
-
 header {
-    height:190px;
+  background-color: #b0eed1;
+}
+footer {
+  background-color: #f2dbee;
 }
