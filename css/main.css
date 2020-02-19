@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap');
 body {
-  font: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 header {
   background-color: #b0eed1;
@@ -25,10 +25,18 @@ header img {
 header ul li {
   display: inline;
   padding-left: 30px;
+  font-size: 20px;
 }
 header .desktop-nav {
   text-align: right;
   text-transform: uppercase;
+}
+main img {
+  width: 100%;
+}
+main .jumbotron {
+  background: url("../images/bg-image.png") no-repeat center center;
+  background-size: 100%;
 }
 footer {
   background-color: #f2dbee;
