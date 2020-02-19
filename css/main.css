@@ -1,0 +1,17 @@
+/* fonts:
+font-family: 'Josefin Sans', sans-serif; 
+*/
+
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    height:190px;
+}
