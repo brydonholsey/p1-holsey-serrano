@@ -111,8 +111,27 @@ main article {
 main article p {
   margin-top: 10px;
 }
+main .trainers-hero-imgs {
+  padding: 10px 0px 10px 0px;
+}
 main .trainers-hero-imgs img {
   max-width: 300px;
+}
+main .image-stack {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+main .image-stack .image-stack-item-bottom {
+  grid-column-start: 4;
+  grid-column-end: -1;
+  grid-row: 1;
+}
+main .image-stack .image-stack-item-top {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  padding-top: 20%;
+  z-index: 1;
 }
 footer {
   background-color: #f2dbee;

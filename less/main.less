@@ -80,9 +80,27 @@ main {
     }
     //*******TRAINERS***********
     .trainers-hero-imgs{
+        padding: 10px 0px 10px 0px;
         img{
             max-width: 300px;
         }
+        
+    }
+    .image-stack {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+        .image-stack-item-bottom {
+            grid-column-start: 4;
+            grid-column-end: -1;
+            grid-row: 1; // make this image be on the same row
+        }
+        .image-stack-item-top {
+            grid-column: 1 / span 8;
+            grid-row: 1; // must be on the same row as the other image
+            padding-top: 20%; // this pushes the image down, and keeps it proportional as it resizes
+            z-index: 1; // make this image render on top of the bottom
+        }    
     }
 }
 footer {
