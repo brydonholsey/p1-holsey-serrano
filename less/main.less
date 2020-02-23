@@ -12,7 +12,6 @@ body {
         margin-bottom: 10px;
     }
 }
-
 header {
     background-color: @lt-green;
     height: 100px;
@@ -30,7 +29,7 @@ header {
     top:0;
     right:0;
     line-height:45px;
-    padding:5px 15px 0px 15px;
+    padding:15px 35px 0px 15px;
     color:#999;
     border:0;
     font-size:1.4em;
@@ -44,7 +43,7 @@ header {
     position:absolute;
     top:0px;
     right:0;
-    padding:7px 15px 0px 15px;
+    padding:15px 35px 0px 15px;
     color:#999;
     border:0;
     font-size:3em;
@@ -54,7 +53,7 @@ header {
     outline:none;
     z-index:10000000000000;
     }
-    .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+    .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:@pink;  position:absolute; text-align:center; font-size:12px;}
     .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
     .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
     .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
@@ -79,22 +78,31 @@ main {
             margin-top:10px;
         }
     }
+    //*******TRAINERS***********
+    .trainers-hero-imgs{
+        img{
+            max-width: 300px;
+        }
+    }
 }
 footer {
     background-color: @pink;
+    .footer-content {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px
+    }
     img {
-        width: 100%;
+        width: 35vw;
+        max-width: 100px;
     }
     p {
         margin:0;
+        font-size: .8rem;
     }
 }
-.footer-content {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px
-}
+
 
 @media (min-width:1000px){
     header{
