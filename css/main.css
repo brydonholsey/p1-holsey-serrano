@@ -130,8 +130,12 @@ main .image-stack .image-stack-item-bottom {
 main .image-stack .image-stack-item-top {
   grid-column: 1 / span 8;
   grid-row: 1;
-  padding-top: 20%;
+  padding-top: 10%;
   z-index: 1;
+}
+main .trainers-hero-text h2 {
+  display: flex;
+  justify-content: flex-end;
 }
 footer {
   background-color: #f2dbee;
@@ -150,6 +154,30 @@ footer p {
   margin: 0;
   font-size: .8rem;
 }
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 720px;
+  }
+}
+@media (min-width: 700px) {
+  main .trainers-hero {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .trainers-hero .trainers-hero-imgs {
+    order: 2;
+  }
+  main .trainers-hero .trainers-hero-text {
+    max-width: 400px;
+    font-size: 1rem;
+    padding-top: 9px;
+    padding-right: 8px;
+  }
+  main .trainers-hero .trainers-hero-text h2 {
+    justify-content: flex-start;
+  }
+}
 @media (min-width: 1000px) {
   header .menu,
   header .hamburger,
@@ -164,11 +192,10 @@ footer p {
     text-align: right;
     text-transform: uppercase;
     padding-top: 16px;
-  }
-  header .desktop-menu .header-row {
     justify-content: space-between;
-    align-items: center;
-    height: 80px;
+    margin: auto;
+    padding-left: 146px;
+    padding-right: 121px;
   }
   header .desktop-menu img {
     max-width: 200px;
@@ -178,6 +205,9 @@ footer p {
     align-items: center;
     justify-content: flex-end;
     padding-top: 7px;
+  }
+  header .desktop-menu ul {
+    padding-right: 10px;
   }
   header .desktop-menu ul li {
     display: inline;

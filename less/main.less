@@ -78,13 +78,12 @@ main {
             margin-top:10px;
         }
     }
-    //*******TRAINERS***********
+    //*******TRAINERS PAGE BEGINS***********
     .trainers-hero-imgs{
         padding: 10px 0px 10px 0px;
         img{
             max-width: 300px;
         }
-        
     }
     .image-stack {
         display: grid;
@@ -98,10 +97,18 @@ main {
         .image-stack-item-top {
             grid-column: 1 / span 8;
             grid-row: 1; // must be on the same row as the other image
-            padding-top: 20%; // this pushes the image down, and keeps it proportional as it resizes
+            padding-top: 10%; // this pushes the image down, and keeps it proportional as it resizes
             z-index: 1; // make this image render on top of the bottom
         }    
     }
+    .trainers-hero-text{
+        h2{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    //*******TRAINERS PAGE ENDS***********
+
 }
 footer {
     background-color: @pink;
@@ -120,7 +127,32 @@ footer {
         font-size: .8rem;
     }
 }
+@media (min-width: 576px){
+    .container, .container-sm {
+        max-width: 720px;
+    }
+}
 
+@media (min-width:700px){
+    main{
+        .trainers-hero{
+            display: flex;
+            justify-content: space-between;
+            .trainers-hero-imgs{
+                order: 2;
+            }
+            .trainers-hero-text{
+                max-width: 400px;
+                font-size: 1rem;
+                padding-top: 9px;
+                padding-right: 8px;
+                h2{
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
 
 @media (min-width:1000px){
     header{
@@ -135,11 +167,10 @@ footer {
             text-align: right;
             text-transform: uppercase;
             padding-top: 16px;
-            .header-row {
-                justify-content: space-between;
-                align-items: center;
-                height: 80px;
-            }
+            justify-content: space-between;
+            margin: auto;
+            padding-left: 146px;
+            padding-right: 121px;
             img {
                 max-width: 200px;
             }
@@ -149,6 +180,7 @@ footer {
                 justify-content: flex-end;
                 padding-top: 7px;            }
             ul {
+                padding-right: 10px;
                 li {
                     display: inline;
                     padding-left: 30px;
