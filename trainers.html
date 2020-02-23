@@ -11,6 +11,8 @@
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap" rel="stylesheet">
+    <!--hamburger jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- local styles -->
     <link rel="stylesheet" href="css/main.css">
@@ -19,26 +21,31 @@
 </head>
 <body>
     <header>
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+    
         <div class="container">
-            <div class="row header-row desktop-nav-display">
-                <div class="col-sm-3">
+            <div>
+                <div class="menu-img">
                     <img src="images/vesta.png" alt="">
                 </div>
-                <div class="col-sm-9 desktop-nav">
-                    <ul>
-                        <li>Trainers</li>
-                        <li>Classes</li>
-                        <li>Contact</li>
-                        <li>About</li>
-                        <li>Home</li>
-                    </ul>
+                <div class="menu">
+                    <div>
+                        <ul>
+                            <li>Trainers</li>
+                            <li>Classes</li>
+                            <li>Contact</li>
+                            <li>About</li>
+                            <li>Home</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="row header-row mobile-nav">
+            <div class="desktop-menu row header-row">
                 <div>
                     <img src="images/vesta.png" alt="">
                 </div>
-                <div >
+                <div class="col-sm-9 desktop-nav">
                     <ul>
                         <li>Trainers</li>
                         <li>Classes</li>
@@ -65,6 +72,10 @@
           
         </section>
     </main>
+
+    <!--hamburger menu js-->
+    <script src="js/hamburger.js"></script>
+
     <footer>
         <div class="container">
             <div class="row footer-content">
@@ -77,13 +88,15 @@
             </div>
         </div>
     </footer>
-    
 
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!--additional jquery file. jquery slim does not inclde animation for hamburger-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+
 </body>
 </html>

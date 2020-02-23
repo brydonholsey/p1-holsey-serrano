@@ -13,32 +13,90 @@ body h2 {
 header {
   background-color: #b0eed1;
   height: 100px;
+  /******Hamburger Menu ENDS***
+        */
 }
-header .header-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100px;
-}
-header img {
+header .menu-img img {
   width: 100%;
-  max-width: 210px;
+  max-width: 10rem;
+  padding-top: .75rem;
 }
-header ul li {
-  display: inline;
-  padding-left: 30px;
-  font-size: 15px;
+header .desktop-menu {
+  display: none;
 }
-header .desktop-nav {
-  text-align: right;
-  text-transform: uppercase;
-  padding-top: 16px;
+header .hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+header .cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 7px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+header .menu {
+  z-index: 1000000;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+}
+header .menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+header .menu li {
+  display: block;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+header .menu li:hover {
+  display: block;
+  background: #ffffff;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+header .menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #666;
+}
+header .menu ul li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+header .menu a {
+  text-decoration: none;
+  color: #666;
+}
+header .menu a:hover {
+  text-decoration: none;
+  color: #666;
 }
 main img {
   width: 100%;
@@ -63,14 +121,37 @@ footer p {
   margin: 0;
 }
 .footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 100px;
+}
+@media (min-width: 1000px) {
+  header .menu,
+  header .hamburger,
+  header .cross {
+    display: none;
+  }
+  header .menu-img {
+    display: none;
+  }
+  header .desktop-menu {
+    display: flex;
+    text-align: right;
+    text-transform: uppercase;
+    padding-top: 16px;
+  }
+  header .desktop-menu .header-row {
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  header .desktop-menu img {
+    max-width: 200px;
+  }
+  header .desktop-menu ul li {
+    display: inline;
+    padding-left: 30px;
+    font-size: 15px;
+  }
 }
