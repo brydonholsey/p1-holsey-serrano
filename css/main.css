@@ -149,6 +149,12 @@ footer p {
   header .desktop-menu img {
     max-width: 200px;
   }
+  header .desktop-menu .desktop-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 7px;
+  }
   header .desktop-menu ul li {
     display: inline;
     padding-left: 30px;
