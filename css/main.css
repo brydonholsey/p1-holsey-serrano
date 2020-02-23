@@ -137,6 +137,21 @@ main .trainers-hero-text h2 {
   display: flex;
   justify-content: flex-end;
 }
+main .trainers-hero-text p {
+  font-size: 15px;
+}
+main .trainers-profiles {
+  margin-bottom: 15px;
+}
+main .trainers-profiles p {
+  font-size: 14px;
+}
+main .trainers-profiles .trainers-pink {
+  background-color: #f2dbee;
+}
+main .trainers-profiles .trainers-green {
+  background-color: #b0eed1;
+}
 footer {
   background-color: #f2dbee;
 }
@@ -171,7 +186,7 @@ footer p {
   main .trainers-hero .trainers-hero-text {
     max-width: 400px;
     font-size: 1rem;
-    padding-top: 9px;
+    padding-top: 20px;
     padding-right: 8px;
   }
   main .trainers-hero .trainers-hero-text h2 {
@@ -191,11 +206,10 @@ footer p {
     display: flex;
     text-align: right;
     text-transform: uppercase;
-    padding-top: 16px;
+    padding: 16px 121px 0px 146px;
+    max-width: 1200px;
     justify-content: space-between;
     margin: auto;
-    padding-left: 146px;
-    padding-right: 121px;
   }
   header .desktop-menu img {
     max-width: 200px;
