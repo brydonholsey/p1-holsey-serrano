@@ -143,14 +143,24 @@ main .trainers-hero-text p {
 main .trainers-profiles {
   margin-bottom: 15px;
 }
+main .trainers-profiles img {
+  max-width: 200px;
+}
+main .trainers-profiles h3 {
+  margin-bottom: -5px;
+}
 main .trainers-profiles p {
   font-size: 14px;
 }
 main .trainers-profiles .trainers-pink {
   background-color: #f2dbee;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 main .trainers-profiles .trainers-green {
   background-color: #b0eed1;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 footer {
   background-color: #f2dbee;
