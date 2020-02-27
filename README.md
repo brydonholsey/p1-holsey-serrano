@@ -1,1 +1,2 @@
 # p1-holsey-serrano
+for JavaScript used to move image below the paragraph at tablet size, I used this help doc: https://stackoverflow.com/questions/34913953/move-an-element-one-place-up-or-down-in-the-dom-tree-with-javascript

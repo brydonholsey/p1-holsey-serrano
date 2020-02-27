@@ -126,7 +126,7 @@ main .hero-images img {
      object-position: center;
 }
 main article {
-  padding: 50px 0;
+  padding: 25px 0;
 }
 main article p {
   margin-top: 10px;
@@ -305,6 +305,9 @@ footer p {
     margin: auto;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  main article {
+    padding: 50px 0;
   }
 }
 @media (min-width: 1000px) {
