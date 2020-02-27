@@ -161,6 +161,43 @@ main {
         }
     }
     //*******TRAINERS PAGE ENDS***********
+
+    // *******contact page begins*********
+    /* form styles */
+
+.contact-form {
+    .label_input_wrap {
+        display: block;
+        padding-bottom: 5px;
+      }
+      .submit input{
+        text-transform: uppercase;
+        padding: 8px 25px;
+        background-color: @pink;
+        border: 2px solid @pink;
+        color: @black;
+        margin: 20px 0;
+        font-size: 1rem;
+        &:hover{
+            background: none;
+            border: 2px solid @black;
+            color: @black;
+        }
+     }
+     input, textarea {
+        padding: 8px 10px;
+        border: 2px solid @black;
+    }
+    .form-field {
+        width: 100%;
+    }
+    
+    .input-section {
+      padding:10px;
+    }
+  }
+
+//  ******* contact page ends **********
 }
 footer {
     background-color: @pink;
@@ -281,6 +318,11 @@ footer {
         }
         article {
             padding: 50px 0;
+        }
+        .contact-form {
+            .form-field {
+                width:50%;
+            }
         }
     }
     footer {

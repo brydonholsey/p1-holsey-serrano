@@ -105,6 +105,9 @@ header .menu a:hover {
   text-decoration: none;
   color: #666;
 }
+main {
+  /* form styles */
+}
 main img {
   width: 100%;
 }
@@ -198,6 +201,35 @@ main .trainers-profiles .trainers-green {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+main .contact-form .label_input_wrap {
+  display: block;
+  padding-bottom: 5px;
+}
+main .contact-form .submit input {
+  text-transform: uppercase;
+  padding: 8px 25px;
+  background-color: #f2dbee;
+  border: 2px solid #f2dbee;
+  color: #000000;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+main .contact-form .submit input:hover {
+  background: none;
+  border: 2px solid #000000;
+  color: #000000;
+}
+main .contact-form input,
+main .contact-form textarea {
+  padding: 8px 10px;
+  border: 2px solid #000000;
+}
+main .contact-form .form-field {
+  width: 100%;
+}
+main .contact-form .input-section {
+  padding: 10px;
 }
 footer {
   background-color: #f2dbee;
@@ -309,6 +341,9 @@ footer p {
   }
   main article {
     padding: 50px 0;
+  }
+  main .contact-form .form-field {
+    width: 50%;
   }
   footer .footer-content {
     text-align: left;
