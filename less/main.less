@@ -22,6 +22,13 @@ header {
     }
     .desktop-menu{
         display: none;
+        a {
+            color:#000000;
+            &:hover {
+                color: @dk-green;
+                text-decoration: none;
+            }
+        }
     }
     .hamburger{
     background:none;
@@ -195,10 +202,11 @@ footer {
     }
 }
 @media (min-width: 576px){
-    .container, .container-sm {
+     .container-sm {
         max-width: 720px;
     }
 }
+
 @media (min-width:600px){
     main{
         .trainers-profiles{
@@ -262,7 +270,7 @@ footer {
             display: flex;
             text-align: right;
             text-transform: uppercase;
-            padding: 16px 121px 0px 146px;
+            padding-top: 16px;
             max-width: 1200px;
             justify-content: space-between;
             margin: auto;
@@ -284,4 +292,13 @@ footer {
             }
         }
     }
+}
+
+@media (min-width: 1200px) {
+    main {
+        .trainers-hero {
+            max-width: 1000px;
+        }
+    }
+
 }

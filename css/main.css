@@ -24,6 +24,13 @@ header .menu-img img {
 header .desktop-menu {
   display: none;
 }
+header .desktop-menu a {
+  color: #000000;
+}
+header .desktop-menu a:hover {
+  color: #78d4a7;
+  text-decoration: none;
+}
 header .hamburger {
   background: none;
   position: absolute;
@@ -135,8 +142,12 @@ main .image-stack .image-stack-item-top {
   z-index: 1;
 }
 main .trainers-hero-text h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 main .trainers-hero-text p {
   font-size: 15px;
@@ -164,20 +175,30 @@ main .trainers-profiles p {
 main .trainers-profiles .trainers-pink {
   background-color: #f2dbee;
   margin-bottom: 10px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 main .trainers-profiles .trainers-green {
   background-color: #b0eed1;
   margin-bottom: 10px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 footer {
   background-color: #f2dbee;
 }
 footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100px;
 }
 footer img {
@@ -215,7 +236,6 @@ footer p {
   }
 }
 @media (min-width: 576px) {
-  .container,
   .container-sm {
     max-width: 720px;
   }
@@ -241,11 +261,17 @@ footer p {
 }
 @media (min-width: 700px) {
   main .trainers-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   main .trainers-hero .trainers-hero-imgs {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   main .trainers-hero .trainers-hero-text {
     max-width: 400px;
@@ -254,7 +280,9 @@ footer p {
     padding-right: 8px;
   }
   main .trainers-hero .trainers-hero-text h2 {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 @media (min-width: 1000px) {
@@ -267,21 +295,31 @@ footer p {
     display: none;
   }
   header .desktop-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: right;
     text-transform: uppercase;
-    padding: 16px 121px 0px 146px;
+    padding-top: 16px;
     max-width: 1200px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: auto;
   }
   header .desktop-menu img {
     max-width: 200px;
   }
   header .desktop-menu .desktop-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     padding-top: 7px;
   }
   header .desktop-menu ul {
@@ -291,5 +329,10 @@ footer p {
     display: inline;
     padding-left: 30px;
     font-size: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  main .trainers-hero {
+    max-width: 1000px;
   }
 }
