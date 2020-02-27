@@ -77,7 +77,19 @@ main {
     }
     .jumbotron {
         background: url("../images/bg-image.png") no-repeat center center; 
-        background-size: 100%;
+        background-size: cover;
+    }
+
+    .hero-images {
+        text-align: center;
+        img {
+            width: 75%;
+            height: 30vh;
+            margin: 10px;
+            overflow: hidden;
+            object-fit: cover;
+            object-position: center;
+        }
     }
     article {
         padding: 50px 0;
@@ -254,6 +266,17 @@ footer {
                     justify-content: flex-start;
                 }
             }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    main {
+        .hero-images img{
+            width: 100%;
+            height: auto;
+            margin: auto;
+            object-fit: cover;
         }
     }
 }

@@ -110,7 +110,20 @@ main img {
 }
 main .jumbotron {
   background: url("../images/bg-image.png") no-repeat center center;
-  background-size: 100%;
+  background-size: cover;
+}
+main .hero-images {
+  text-align: center;
+}
+main .hero-images img {
+  width: 75%;
+  height: 30vh;
+  margin: 10px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 main article {
   padding: 50px 0;
@@ -283,6 +296,15 @@ footer p {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  main .hero-images img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1000px) {
