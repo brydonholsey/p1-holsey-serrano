@@ -202,6 +202,9 @@ main .trainers-profiles .trainers-green {
       -ms-flex-pack: center;
           justify-content: center;
 }
+main #bootstrap-overrides .accordion .card .card-header {
+  background-color: red;
+}
 main .contact-form .label_input_wrap {
   display: block;
   padding-bottom: 5px;
