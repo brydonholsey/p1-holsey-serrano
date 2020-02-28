@@ -134,6 +134,20 @@ main article {
 main article p {
   margin-top: 10px;
 }
+main .button {
+  text-transform: uppercase;
+  padding: 8px 25px;
+  background-color: #f2dbee;
+  border: 2px solid #f2dbee;
+  color: #000000;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+main .button:hover {
+  background: none;
+  border: 2px solid #000000;
+  color: #000000;
+}
 main .trainers-hero-imgs {
   padding: 10px 0px 10px 0px;
   justify-items: center;
@@ -269,6 +283,9 @@ main .about-img .right-bg {
   top: 0;
   left: 0;
   padding: 30px;
+}
+main #about-loc iframe {
+  height: 400px;
 }
 footer {
   background-color: #f2dbee;

@@ -97,6 +97,22 @@ main {
             margin-top:10px;
         }
     }
+
+    .button{
+        text-transform: uppercase;
+        padding: 8px 25px;
+        background-color: @pink;
+        border: 2px solid @pink;
+        color: @black;
+        margin: 20px 0;
+        font-size: 1rem;
+        &:hover{
+            background: none;
+            border: 2px solid @black;
+            color: @black;
+        }
+     }
+
     //*******TRAINERS PAGE BEGINS***********
     .trainers-hero-imgs{
         padding: 10px 0px 10px 0px;
@@ -250,12 +266,15 @@ main {
 
 }
 
-.about-img2 {
-
+#about-loc {
+    iframe {
+        height: 400px;
+    }
 }
 
 // ********* about page ends **********
 }
+
 footer {
     background-color: @pink;
     .footer-content {
