@@ -210,6 +210,51 @@ main {
   }
 
 //  ******* contact page ends **********
+
+// ********* about page begins **********
+.about-img {
+    max-width: 420px;
+    border: 5px solid @black;
+    margin: 0 auto;
+    height: 430px;
+    position: relative;
+    margin-bottom:30px;
+    .left-img {
+        width: 85%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 30px;
+    }
+    .left-bg {
+        width: 85%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 30px;
+    }
+    .right-img {
+        width: 85%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 30px;
+    }
+    .right-bg {
+        width: 85%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 30px;
+    }
+
+}
+
+.about-img2 {
+
+}
+
+// ********* about page ends **********
 }
 footer {
     background-color: @pink;
@@ -227,6 +272,14 @@ footer {
     p {
         margin:0;
         font-size: .8rem;
+    }
+}
+
+@media (min-width:400px){
+    main {
+        .about-img {
+            height: 535px;
+        }
     }
 }
 @media (min-width:430px){
@@ -392,5 +445,4 @@ footer {
             max-width: 1000px;
         }
     }
-
 }
