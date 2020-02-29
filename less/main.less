@@ -178,30 +178,43 @@ main {
     }
     //*******TRAINERS PAGE ENDS***********
     //*******CLASSES PAGE BEGINS*********
-    #bootstrap-overrides {
-        .accordion{
-            .card{
-                .card-header {
-                    background-color:red;
-                }
-            }
-        }
-    } 
-
+    .classes-header{
+        display: flex;
+    }
+    .accordion{
+        padding: 20px 0px 50px 0px;
+    }
     .card-header {
-        background-color: @pink;
+        background-color:@pink;
         button {
             color: @black;
             &:hover{
                 color: @dk-green;
                 text-decoration: none;
+                font-style: italic;
+                font-weight: 700;
             }
-        }
-        
+        }  
+    }
+    .card-body div{
+        padding: 2px 0px 2px 0px;
+    }
+    #headingTwo{
+        background-color: rgba(176, 238, 209, 0.6);
+    }
+    #headingThree{
+        background-color: rgba(242, 219, 248, 0.75);
+    }
+    #headingFour{
+        background-color: rgba(176, 238, 209, 0.35);
+    }
+    #headingFive{
+        background-color: rgba(242, 219, 248, 0.5);
+    }
+    #headingSix{
+        background-color: rgba(176, 238, 209, 0.6);
     }
 
-
- 
 
     //*******CLASSES PAGE ENDS*********
     // *******contact page begins*********
@@ -362,6 +375,9 @@ footer {
                 margin-right: 2px;
             }
         }
+        .classes-row div{
+            padding: 5px 0px 5px 0px;
+        }
     }
 }
 @media (min-width:610px) and (max-width: 645px){
@@ -434,6 +450,13 @@ footer {
             text-align: left;
         }
     }
+}
+@media(min-width:800px){
+   main{
+       .classes-heading{
+            padding-top: 25px;
+       }
+   }
 }
 
 @media (min-width:1000px){

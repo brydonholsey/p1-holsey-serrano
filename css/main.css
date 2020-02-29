@@ -123,10 +123,8 @@ main .hero-images img {
   height: 30vh;
   margin: 10px;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 main article {
   padding: 25px 0;
@@ -172,12 +170,8 @@ main .image-stack .image-stack-item-top {
   z-index: 1;
 }
 main .trainers-hero-text h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 main .trainers-hero-text p {
   font-size: 15px;
@@ -205,19 +199,18 @@ main .trainers-profiles p {
 main .trainers-profiles .trainers-pink {
   background-color: #f2dbee;
   margin-bottom: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 main .trainers-profiles .trainers-green {
   background-color: #b0eed1;
   margin-bottom: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-main #bootstrap-overrides .accordion .card .card-header {
-  background-color: red;
+main .classes-header {
+  display: flex;
+}
+main .accordion {
+  padding: 20px 0px 50px 0px;
 }
 main .card-header {
   background-color: #f2dbee;
@@ -228,6 +221,26 @@ main .card-header button {
 main .card-header button:hover {
   color: #78d4a7;
   text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+}
+main .card-body div {
+  padding: 2px 0px 2px 0px;
+}
+main #headingTwo {
+  background-color: rgba(176, 238, 209, 0.6);
+}
+main #headingThree {
+  background-color: rgba(242, 219, 248, 0.75);
+}
+main #headingFour {
+  background-color: rgba(176, 238, 209, 0.35);
+}
+main #headingFive {
+  background-color: rgba(242, 219, 248, 0.5);
+}
+main #headingSix {
+  background-color: rgba(176, 238, 209, 0.6);
 }
 main .contact-form .label_input_wrap {
   display: block;
@@ -301,15 +314,9 @@ footer {
   background-color: #f2dbee;
 }
 footer .footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 100px;
   text-align: center;
 }
@@ -361,6 +368,9 @@ footer p {
   main .trainers-profiles .trainers-names {
     margin-right: 2px;
   }
+  main .classes-row div {
+    padding: 5px 0px 5px 0px;
+  }
 }
 @media (min-width: 610px) and (max-width: 645px) {
   main .trainers-profiles .trainers-names {
@@ -378,17 +388,11 @@ footer p {
 }
 @media (min-width: 700px) {
   main .trainers-hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   main .trainers-hero .trainers-hero-imgs {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   main .trainers-hero .trainers-hero-text {
     max-width: 400px;
@@ -397,9 +401,7 @@ footer p {
     padding-right: 8px;
   }
   main .trainers-hero .trainers-hero-text h2 {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
 @media (min-width: 768px) {
@@ -411,8 +413,7 @@ footer p {
     width: 100%;
     height: auto;
     margin: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   main article {
     padding: 50px 0;
@@ -422,6 +423,11 @@ footer p {
   }
   footer .footer-content {
     text-align: left;
+  }
+}
+@media (min-width: 800px) {
+  main .classes-heading {
+    padding-top: 25px;
   }
 }
 @media (min-width: 1000px) {
@@ -434,31 +440,21 @@ footer p {
     display: none;
   }
   header .desktop-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     text-align: right;
     text-transform: uppercase;
     padding-top: 16px;
     max-width: 1200px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     margin: auto;
   }
   header .desktop-menu img {
     max-width: 200px;
   }
   header .desktop-menu .desktop-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-end;
     padding-top: 7px;
   }
   header .desktop-menu ul {
