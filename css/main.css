@@ -219,6 +219,16 @@ main .trainers-profiles .trainers-green {
 main #bootstrap-overrides .accordion .card .card-header {
   background-color: red;
 }
+main .card-header {
+  background-color: #f2dbee;
+}
+main .card-header button {
+  color: #000000;
+}
+main .card-header button:hover {
+  color: #78d4a7;
+  text-decoration: none;
+}
 main .contact-form .label_input_wrap {
   display: block;
   padding-bottom: 5px;
