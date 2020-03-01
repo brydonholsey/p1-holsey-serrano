@@ -212,34 +212,34 @@ main .classes-header {
 main .accordion {
   padding: 20px 0px 50px 0px;
 }
-main .card-header {
+main .accordion .card-body div {
+  padding: 2px 0px 2px 0px;
+}
+main .accordion .card-header {
   background-color: #f2dbee;
 }
-main .card-header button {
+main .accordion .card-header button {
   color: #000000;
 }
-main .card-header button:hover {
+main .accordion .card-header button:hover {
   color: #78d4a7;
   text-decoration: none;
   font-style: italic;
   font-weight: 700;
 }
-main .card-body div {
-  padding: 2px 0px 2px 0px;
-}
-main #headingTwo {
+main .accordion #headingTwo {
   background-color: rgba(176, 238, 209, 0.6);
 }
-main #headingThree {
+main .accordion #headingThree {
   background-color: rgba(242, 219, 248, 0.75);
 }
-main #headingFour {
+main .accordion #headingFour {
   background-color: rgba(176, 238, 209, 0.35);
 }
-main #headingFive {
+main .accordion #headingFive {
   background-color: rgba(242, 219, 248, 0.5);
 }
-main #headingSix {
+main .accordion #headingSix {
   background-color: rgba(176, 238, 209, 0.6);
 }
 main .contact-form .label_input_wrap {
